@@ -11,7 +11,10 @@ const mongoose = require(`mongoose`);
 const _ = require("lodash");
 const { Schema } = mongoose;
 
-mongoose.connect(`mongodb+srv://test123:Pepper091581!@cluster0.2mzjk.mongodb.net/todolistDB`, {useUnifiedTopology: true, useNewUrlParser: true});
+
+const CONNECTION_URL = `mongodb+srv://test123:Pepper2691@cluster0.2mzjk.mongodb.net/todolistDB?retryWrites=true&w=majority`
+mongoose.connect(CONNECTION_URL, {useUnifiedTopology: true, useNewUrlParser: true})
+
 
 const itemsSchema = new Schema ({
   name: String,
@@ -28,15 +31,15 @@ const List = mongoose.model("List", listSchema)
 
 
 const item = new Item({
-  name: `stuff to do`,
+  name: `Do an hour of cardio!`,
 });
 
 const item2 = new Item({
-  name: `finish coding`,
+  name: `Do the dishes`,
 });
 
 const item3 = new Item({
-  name: `workout`,
+  name: `Take Pepper out`,
 });
 
 const defaultItems = [item, item2, item3];
@@ -133,5 +136,5 @@ if (port == null || port == "") {
 }
 
 app.listen(port, ()=>{
-  console.log("server is running successfully!");
+  console.log(`server is running successfully on port: ${port}`);
 });
