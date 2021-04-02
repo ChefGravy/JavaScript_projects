@@ -12,7 +12,7 @@ const _ = require("lodash");
 const { Schema } = mongoose;
 
 
-const CONNECTION_URL = `mongodb+srv://test123:Pepper091581!@cluster0.2mzjk.mongodb.net/todolistDB?retryWrites=true&w=majority`
+const CONNECTION_URL = `mongodb+srv://testout:Password45678!@cluster0.2mzjk.mongodb.net/todolistDB?retryWrites=true&w=majority`
 mongoose.connect(CONNECTION_URL, {useUnifiedTopology: true, useNewUrlParser: true})
 
 
