@@ -1,0 +1,41 @@
+{
+  "name": "using-pre-built-react-components-ui",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "@material-ui/core": "4.11.2",
+    "@material-ui/icons": "4.11.2",
+    "@material-ui/utils": "4.11.2",
+    "axios": "^0.21.1",
+    "ejs": "^3.1.5",
+    "moment": "^2.29.1",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.11.8",
+    "nodemon": "^2.0.6",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-redux": "^7.2.2",
+    "react-scripts": "^4.0.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "web-vitals": "^1.0.1"
+  },
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "typescript": "3.3.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "react-scripts start"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
